@@ -1,0 +1,117 @@
+﻿@model JobbyProject.Models.Class
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <section class="content">
+        <div class="container-fluid">
+
+            <h4>Class</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Image)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Image)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.SizeSeat)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.SizeSeat)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.OpenHours)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.OpenHours)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CloseHours)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CloseHours)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.StartDate)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.StartDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.AgeID)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.AgeID)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CategoryID)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CategoryID)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TeacherID)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TeacherID)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
+        </div>
+        </section>
+    </div>

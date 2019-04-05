@@ -1,0 +1,253 @@
+﻿@model JobbyProject.ViewModel.ClassVM
+
+@{
+    ViewBag.Title = "Index";
+}
+<!-- MAIN-->
+<main id="main">
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('../../Public/images/bg-heading-01.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">Программа</h2>
+                    <div class="section-heading__line">
+                        <img src="~/Public/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a href="@Url.Action("index","home")">Главная</a>
+                        </li>
+                        <li class="list-breadcrumb__item">Программа</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- PROGRAM-->
+    <section class="section p-t-120 p-md-t-50 p-b-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading section-heading-1">
+                        <h2 class="section-heading__title">Наши программы</h2>
+                        <div class="section-heading__line">
+                            
+                                <img src="~/Public/images/icon/line-blue.png" alt="Line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="box box-program">
+                        <div class="box__head">
+                            <div class="box__head-bg">
+                                <img src="~/Public/images/icon/bg-program-01.png" alt="Background" />
+                                <div class="box__head-icon wow fadeIn">
+                                    <img src="~/Public/images/icon/program-01.png" alt="Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title title title--sm title--black">
+                                <a href="@Url.Action("index", "programs")">Рисование</a>
+                                
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box box-program">
+                        <div class="box__head">
+                            <div class="box__head-bg">
+                                <img src="~/Public/images/icon/bg-program-02.png" alt="Background" />
+                                <div class="box__head-icon wow fadeIn">
+                                    <img src="~/Public/images/icon/program-02.png" alt="Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title title title--sm title--black">
+                                <a href="#">Здоровая еда</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box box-program">
+                        <div class="box__head">
+                            <div class="box__head-bg">
+                                <img src="~/Public/images/icon/bg-program-03.png" alt="Background" />
+                                <div class="box__head-icon wow fadeIn">
+                                    <img src="~/Public/images/icon/program-03.png" alt="Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title title title--sm title--black">
+                                <a href="#">Музыка</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box box-program">
+                        <div class="box__head">
+                            <div class="box__head-bg">
+                                <img src="~/Public/images/icon/bg-program-04.png" alt="Background" />
+                                <div class="box__head-icon wow fadeIn">
+                                    <img src="~/Public/images/icon/program-04.png" alt="Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title title title--sm title--black">
+                                <a href="#">Танцы</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box box-program">
+                        <div class="box__head">
+                            <div class="box__head-bg">
+                                <img src="~/Public/images/icon/bg-program-05.png" alt="Background" />
+                                <div class="box__head-icon wow fadeIn">
+                                    <img src="~/Public/images/icon/program-05.png" alt="Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title title title--sm title--black">
+                                <a href="#">Игры</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="box box-program">
+                        <div class="box__head">
+                            <div class="box__head-bg">
+                                <img src="~/Public/images/icon/bg-program-06.png" alt="Background" />
+                                <div class="box__head-icon wow fadeIn">
+                                    <img src="~/Public/images/icon/program-06.png" alt="Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title title title--sm title--black">
+                                <a href="#">Сказки &amp; Истории</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="col-md-6 col-lg-3">
+                    <div class="box box-program">
+                        <div class="box__head">
+                            <div class="box__head-bg">
+                                <img src="~/Public/images/icon/bg-program-08.png" alt="Background" />
+                                <div class="box__head-icon wow fadeIn">
+                                    <img src="~/Public/images/icon/program-08.png" alt="Icon" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title title title--sm title--black">
+                                <a href="#">Изучение языков</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PROGRAM-->
+    <!-- TESTI-->
+    <section class="section bg-pattern bg-pattern-2 p-t-130 p-md-t-50 p-b-90 p-md-b-50">
+        <div class="container">
+            <div class="slick-testi-1">
+                <div class="slick__wrap-content js-slick-wrapper" data-slick-xs="1" data-slick-sm="1" data-slick-md="2" data-slick-lg="2" data-slick-xl="2" data-slick-dots="true" data-slick-customnav="true" data-slick-autoplay="false">
+                    <div class="slick__content js-slick-content">
+                        <div class="slick__item">
+                            <div class="media media-testi-1">
+                                <div class="media__body">
+                                    <div class="media__body-inner">
+                                        <blockquote class="media__quote">
+
+                                            Учитель рисования должен обладать личностными качествами. Однако учитель рисования еще должен использовать в работе творческий подход и знать и другие направления. Самое главное – он должен любить детей!
+
+                                        </blockquote>
+                                    </div>
+                                    <div class="qoute-before"></div>
+                                    <div class="qoute-after"></div>
+                                </div>
+                                <div class="media__info-wrap">
+                                    <div class="media__img img-circle">
+                                        <img src="~/Public/images/testi-01.jpg" alt="Pamela Carroll" />
+                                    </div>
+                                    <div class="media__info">
+                                        <h5 class="title title--sbold">Самира Мамедова</h5>
+                                        <span class="job">- Дизайнер -</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick__item">
+                            <div class="media media-testi-1">
+                                <div class="media__body">
+                                    <div class="media__body-inner">
+                                        <blockquote class="media__quote">
+                                            Учитель рисования должен обладать личностными качествами. Однако учитель рисования еще должен использовать в работе творческий подход и знать и другие направления. Самое главное – он должен любить детей!
+                                        </blockquote>
+                                    </div>
+                                    <div class="qoute-before"></div>
+                                    <div class="qoute-after"></div>
+                                </div>
+                                <div class="media__info-wrap">
+                                    <div class="media__img img-circle">
+                                        <img src="~/Public/images/testi-02.jpg" alt="Pamela Carroll" />
+                                    </div>
+                                    <div class="media__info">
+                                        <h5 class="title title--sbold">Диана Самедова</h5>
+                                        <span class="job">- Фотограф -</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick__item">
+                            <div class="media media-testi-1">
+                                <div class="media__body">
+                                    <div class="media__body-inner">
+                                        <blockquote class="media__quote">
+                                            Учитель рисования должен обладать личностными качествами. Однако учитель рисования еще должен использовать в работе творческий подход и знать и другие направления. Самое главное – он должен любить детей!
+                                        </blockquote>
+                                    </div>
+                                    <div class="qoute-before"></div>
+                                    <div class="qoute-after"></div>
+                                </div>
+                                <div class="media__info-wrap">
+                                    <div class="media__img img-circle">
+                                        <img src="~/Public/images/testi-03.jpg" alt="Adam Crawford" />
+                                    </div>
+                                    <div class="media__info">
+                                        <h5 class="title title--sbold">>Камран Гаджиев</h5>
+                                        <span class="job">- Дизайнер 2 -</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick__dots dots-style2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TESTI-->
+</main>
+<!-- END MAIN-->

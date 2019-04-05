@@ -1,0 +1,184 @@
+﻿@model JobbyProject.ViewModel.Singleteachers
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- MAIN-->
+<main id="main">
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('../../Public/images/bg-heading-02.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">Информация Учителя</h2>
+                    <div class="section-heading__line">
+                        <img src="~/Public/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a href="@Url.Action("index","home")">Главная</a>
+                        </li>
+                        <li class="list-breadcrumb__item">Учитель</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- TEACHER SINGLE-->
+    <section class="section p-t-125 p-b-50">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-5 col-lg-4">
+                    <div class="media media-teacher-4">
+                        <div class="media__head">
+                            <div class="media__img">
+                                <img src="~/Public/images/@Model.teacher.Image" alt="Teacher">
+                            </div>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="title title--md">@Model.teacher.Fullname</h3>
+                            <span class="d-block">@Model.teacher.Special Учитель</span>
+                            <ul class="list-unstyled list-teacher-info-2">
+                                <li>
+                                    <span class="lnr lnr-linearicons">@Model.teacher.Experience лет опыта</span>
+                                </li>
+                                <li>
+                                    <span class="lnr lnr-phone">@Model.teacher.Phone</span>
+                                </li>
+                                <li>
+                                    <span class="lnr lnr-envelope">@Model.teacher.Email</span>@*<a href="https://freebw.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d49444c434c035a42434a6d48554c405d4148034e4240">[email&#160;protected]</a>*@
+                                </li>
+                            </ul>
+                            <div class="media__tool">
+                                <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://twitter.com">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <div class="p-l-55 p-sm-l-0">
+                        <h2 class="title title--s35 m-b-20">Учитель @Model.teacher.Fullname</h2>
+                        <p class="m-b-20">
+
+                        </p>@Model.teacher.Description
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TEACHER SINGLE-->
+    <!-- TESTI-->
+    <section class="section bg-pattern bg-pattern-2 p-t-130 p-md-t-50 p-b-90 p-md-b-50">
+        <div class="slick-testi-2">
+            <div class="slick__wrap-content js-slick-wrapper" data-slick-xs="1" data-slick-sm="1" data-slick-md="1" data-slick-lg="1" data-slick-xl="1" data-slick-dots="true" data-slick-customnav="true" data-slick-autoplay="false" data-slick-centermode="true" data-slick-variablewidth="true"
+                 data-slick-variableheight="true" data-slick-centerpadding="0px" data-slick-focuson="true">
+                <div class="slick__content js-slick-content">
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        @Model.teacher.SliderDesc
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/Public/images/testi-01.jpg" alt="Pamela Carroll" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Самира Мамедова</h5>
+                                    <span class="job">- Дизайнер -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        @Model.teacher.SliderDesc
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/Public/images/testi-02.jpg" alt="Pamela Carroll" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Диана Самедова</h5>
+                                    <span class="job">- Фотограф -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        @Model.teacher.SliderDesc
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/Public/images/testi-03.jpg" alt="Adam Crawford" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Камран Гаджиев</h5>
+                                    <span class="job">- Дизайнер 2 -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick__item">
+                        <div class="media media-testi-1">
+                            <div class="media__body">
+                                <div class="media__body-inner">
+                                    <blockquote class="media__quote">
+                                        @Model.teacher.SliderDesc
+                                    </blockquote>
+                                </div>
+                                <div class="qoute-before"></div>
+                                <div class="qoute-after"></div>
+                            </div>
+                            <div class="media__info-wrap">
+                                <div class="media__img img-circle">
+                                    <img src="~/Public/images/testi-02.jpg" alt="Pamela Carroll" />
+                                </div>
+                                <div class="media__info">
+                                    <h5 class="title title--sbold">Нигар Ахмедова</h5>
+                                    <span class="job">- Фотограф 2 -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick__dots dots-style2"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END TESTI-->
+</main>
+<!-- END MAIN-->

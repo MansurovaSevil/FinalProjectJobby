@@ -1,0 +1,120 @@
+﻿@model JobbyProject.ViewModel.ClassVM
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- MAIN-->
+<main id="main">
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('../../Public/images/bg-heading-04.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">Блогсфера</h2>
+                    <div class="section-heading__line">
+                        <img src="~/Public/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a href="@Url.Action("index","home")">Главная</a>
+                        </li>
+                        <li class="list-breadcrumb__item">Блогсфера</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- BLOG MASONRY-->
+    <section class="section p-t-125 p-b-80">
+        <div class="container">
+            <div class="row">
+
+             
+
+
+
+
+                @foreach (var item in Model.blogs)
+                {
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="media media-blog-2">
+                            <div class="media__img">
+                                <a href="@Url.Action("index", "Single", new {id=item.ID })">
+                                    <img src="~/Public/images/@item.GaleryBlogs.First().ImageBlog" alt="How to coax children" />
+                                </a>
+
+
+                                <div class="media__date">
+                                    <div class="media__date-inner">
+                                        <span class="day">@item.Date.ToString("dd")</span>
+                                        <span class="month">@item.Date.ToString("MMMM")</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="media__body">
+                                <h4 class="media__title title title--black title--md">
+                                    <a href="@Url.Action("index", "Single", new {id=item.ID })">@item.Name</a>
+                                </h4>
+                                <div class="media__info">
+                                    <span class="author">
+                                        <a href="@Url.Action("index", "Single")">@item.adminka.Fullname</a>
+                                    </span>
+                                    <a class="cmt" href="#">@item.Comments.Count()</a>
+                                </div>
+                                <p class="media__text">@item.Title2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+
+
+
+
+
+
+           
+        </div>
+    </section>
+    <!-- END BLOG MASONRY-->
+    <!-- CTA-->
+    <section class="section cta-1 bg-pink p-t-80 p-b-55">
+        <div class="container">
+            <div class="cta-wrap">
+                <div class="cta__img wow fadeInUp" data-wow-delay=".2s">
+                    <img src="~/Public/images/cta-item-01.png" alt="CTA">
+                </div>
+                <div class="row">
+                    <div class="col-md-7 offset-md-5">
+                        <div class="wrap--w625">
+                            <div class="cta">
+                                <div class="cta__body">
+                                    
+                                   
+
+                                    <h2 class="title cta__title">КАК ЗАПИСАТЬ СВОЕГО РЕБЕНКА В КЛАСС?</h2>
+                                    <p class="cta__text"> Заинтересованы в хорошем дошкольном образовании своего ребенка? Наш детский сад - правильное решение!</p>
+                                    <a class="au-btn au-btn--blue" href="#">
+                                       Подробно
+                                        <i class="zmdi zmdi-chevron-right"></i>
+                                        <i class="zmdi zmdi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CTA-->
+
+</main>
+<!-- END MAIN-->

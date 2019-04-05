@@ -1,0 +1,37 @@
+﻿@model IEnumerable<JobbyProject.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="content">
+    <div class="container-fluid">
+        <a class="btn btn-success btn-lg" style="margin:20px 0" href ="@Url.Action("Create","Categories")">Create</a>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a class="btn btn-info btn-lg" style="margin:20px 0" href="@Url.Action("Edit","Categories", new { id = item.ID })">Edit</a>
+                        <a class="btn btn-default" style="margin:20px 0" href="@Url.Action("Details","Categories", new { id = item.ID })">Details</a>
+                        <a class="btn btn-danger btn-lg" style="margin:20px 0" href="@Url.Action("Delete","Categories", new { id = item.ID })">Delete</a>
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+</div>
+</section>

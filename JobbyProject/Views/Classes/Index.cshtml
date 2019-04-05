@@ -1,0 +1,221 @@
+﻿@model JobbyProject.ViewModel.ClassVM
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- MAIN-->
+<main id="main">
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('../../Public/images/bg-heading-03.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">Классы</h2>
+                    <div class="section-heading__line">
+                        <img src="~/Public/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a href="@Url.Action("index","home")">Главная</a>
+                        </li>
+                        <li class="list-breadcrumb__item">Классы</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- CLASSES-->
+    <section class="section js-isotope-wrapper p-t-125 p-b-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="au-tab-2 m-b-50">
+                        <ul class="list-unstyled au-tab__nav au-tab__nav--sspace iostope-filter">
+                            <li class="active au-tab__nav-item" data-filter="*">
+                                <span class="au-tab__nav-item-inner">Все классы</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                @foreach (var item in Model.classes)
+                {
+                    <div class="col-md-6 col-lg-4 isotope-item isotope-item-sizer pri">
+                        <div class="media media-our-class-3">
+                            <div class="media__img">
+                                <a href="@Url.Action("index","classesSingle",new {id=item.ID })">
+                                    <img src="~/Public/images/@item.Image" alt="Letter Math Class" />
+                                </a>
+                                <span class="media-our-class__price">
+                                    <span class="inner">@item.Price АЗН</span>
+                                </span>
+                            </div>
+                            <div class="media__body">
+                                <h3 class="media__title">
+                                    <a href="@Url.Action("index","classesSingle", new {id=item.ID })">@item.Name</a>
+                                </h3>
+                                <span class="date-time m-r-15">@item.OpenHours.ToString("hh:mm")  - @item.CloseHours.ToString("HH:mm") </span>
+                                <span class="date-time">@item.StartDate.ToString("dd MMMM yyyy")</span>
+                                <div class="media-our-class__info">
+                                    <div class="row no-gutters">
+                                        <div class="col-6">
+                                            <div class="item has-seprator">
+                                                <span class="name">Возраст</span>
+                                                <span class="value">@item.age.MinAge - @item.age.MaxAge Лет</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="item">
+                                                <span class="name">Мест</span>
+                                                <span class="value">@item.SizeSeat детей</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+    <!-- END CLASSES-->
+    <!-- TEACHER-->
+    <section class="section bg-pink-2 p-t-120 p-md-t-60 p-b-80">
+        <div class="bg-cloud-2">
+            <img src="~/Public/images/icon/bg-cloud-06.png" alt="Cloud 1">
+        </div>
+        <div class="bg-cloud-3">
+            <img src="~/Public/images/icon/bg-cloud-07.png" alt="Cloud 2">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading section-heading-2">
+                        <h2 class="section-heading__title">Наши учителя</h2>
+                        <div class="section-heading__line">
+                            <img src="~/Public/images/icon/line-white.png" alt="Line 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="media media-teacher-2">
+                        <div class="media__img">
+                            <a href="#">
+                                <img src="~/Public/images/teacher-06.jpg" alt="Rose Alexander" />
+                            </a>
+                        </div>
+                        <div class="media__body">
+                            <h4 class="media__title title title--sm title--black">
+                                <a href="#">Айсель Мамедова</a>
+                            </h4>
+                            <span class="media__desc">Директор</span>
+                            <p class="media__text">Традиционно директор — высшая должность в организации, наделённая полномочиями выбора стратегии развития организации.</p>
+                            <div class="media__tool">
+                                <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://twitter.com">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="media media-teacher-2">
+                        <div class="media__img">
+                            <a href="#">
+                                <img src="~/Public/images/teacher-07.jpg" alt="Catherine Wade" />
+                            </a>
+                        </div>
+                        <div class="media__body">
+                            <h4 class="media__title title title--sm title--black">
+                                <a href="#">Ламия Алиева</a>
+                            </h4>
+                            <span class="media__desc">Пение</span>
+                            <p class="media__text">С точки зрения своего происхождения, феномен пения возникал в период неолита как особая звуковая экспликация эмоционального строя, соединяющая смех.</p>
+                            <div class="media__tool">
+                                <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://twitter.com">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="media media-teacher-2">
+                        <div class="media__img">
+                            <a href="#">
+                                <img src="~/Public/images/teacher-08.jpg" alt="Victoria Lawson" />
+                            </a>
+                        </div>
+                        <div class="media__body">
+                            <h4 class="media__title title title--sm title--black">
+                                <a href="#">Лала Акперова</a>
+                            </h4>
+                            <span class="media__desc">Рисование</span>
+                            <p class="media__text">Учитель рисования относится к разделу «Образование и наука» в классификаторе профессий. Учитель рисования является членом педагогического коллектива. Он преподает детям рисование и черчение. </p>
+                            <div class="media__tool">
+                                <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://twitter.com">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="media media-teacher-2">
+                        <div class="media__img">
+                            <a href="#">
+                                <img src="~/Public/images/teacher-09.jpg" alt="Stephanie Arnold" />
+                            </a>
+                        </div>
+                        <div class="media__body">
+                            <h4 class="media__title title title--sm title--black">
+                                <a href="#">Наргиз Ахмедова</a>
+                            </h4>
+                            <span class="media__desc">Иностранные языки</span>
+                            <p class="media__text">Учитель иностранного языка – это педагог, обучающий языковым знаниям, умениям и навыкам в области фонетики, лексики и грамматики иностранного языка</p>
+                            <div class="media__tool">
+                                <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://twitter.com">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TEACHER-->
+
+</main>
+<!-- END MAIN-->

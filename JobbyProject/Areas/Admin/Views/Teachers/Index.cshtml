@@ -1,0 +1,84 @@
+﻿@model IEnumerable<JobbyProject.Models.Teacher>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<section class="content">
+    <div class="container-fluid">
+        <a class="btn btn-success btn-lg" style="margin:20px 0" href="@Url.Action("Create","Teachers")">Create</a>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fullname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Image)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tittle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Special)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Experience)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SliderDesc)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fullname)
+                    </td>
+                    <td>
+                       <img src="~/Public/images/@item.Image" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tittle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Special)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Experience)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SliderDesc)
+                    </td>
+                    <td>
+                        <a class="btn btn-info btn-lg" style="margin:20px 0" href="@Url.Action("Edit","Teachers", new { id = item.ID })">Edit</a>
+                        <a class="btn btn-default" style="margin:20px 0" href="@Url.Action("Details","Teachers", new { id = item.ID })">Details</a>
+                        <a class="btn btn-danger btn-lg" style="margin:20px 0" href="@Url.Action("Delete","Teachers", new { id = item.ID })">Delete</a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+        </div>
+</section>

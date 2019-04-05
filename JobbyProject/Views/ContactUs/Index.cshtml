@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<!-- MAIN-->
+<main id="main">
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('../../Public/images/bg-heading-01.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">Контакты</h2>
+                    <div class="section-heading__line">
+                        <img src="~/Public/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a href="@Url.Action("index","home")">Главная</a>
+                        </li>
+                        <li class="list-breadcrumb__item">Контакты</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- INFO-->
+    <section class="section p-t-125">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="box box-info">
+                        <div class="box__head">
+                            <div class="box__icon au-icon-4 blue">
+                                <span class="lnr lnr-phone-handset"></span>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="title title--xl">Телефон</h3>
+                            <span>(050) 2010 11 10</span>
+                            <span>(055) 915 15 45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="box box-info">
+                        <div class="box__head">
+                            <div class="box__icon au-icon-4 yellow">
+                                <span class="lnr lnr-map"></span>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="title title--xl">Адресс</h3>
+                            <span>г. Баку, Азербайджан.,</span>
+                            <span>Сабаильский район</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="box box-info">
+                        <div class="box__head">
+                            <div class="box__icon au-icon-4 pink">
+                                <span class="lnr lnr-envelope"></span>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="title title--xl">Емаил</h3>
+                            <span>a.mamedova@mail.ru</span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="box box-info">
+                        <div class="box__head">
+                            <div class="box__icon au-icon-4 green">
+                                <span class="lnr lnr-clock"></span>
+                            </div>
+                        </div>
+                        <div class="box__body">
+                            <h3 class="title title--xl">Открыто</h3>
+                            <span>Понедельник-Пятница: 09:00 – 17:00</span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END INFO-->
+    
+    <!-- MAP-->
+    <section class="section">
+        <div class="map-wrapper js-google-map" data-makericon="~/Public/images/icon/map-marker.png" data-makers="[[&quot;Jobby&quot;, &quot;Now that you visited our website,&lt;br&gt; how about checking out our office too?&quot;, 40.715681, -74.003427]]">
+            <div class="map__holder js-map-holder" id="map2"></div>
+        </div>
+    </section>
+    <!-- END MAP-->
+
+</main>
+<!-- END MAIN-->

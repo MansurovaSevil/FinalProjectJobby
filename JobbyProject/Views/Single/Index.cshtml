@@ -1,0 +1,362 @@
+﻿@model JobbyProject.ViewModel.BlogSingles
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main id="main">
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('../../Public/images/bg-heading-04.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">Информации блогсферы</h2>
+                    <div class="section-heading__line">
+                        <img src="~/Public/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a href="@Url.Action("index","home")">Главная</a>
+                        </li>
+                        <li class="list-breadcrumb__item">Информации блогсферы</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- BLOG SINGLE-->
+    <section class="section p-t-125 p-b-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-9">
+                    <div class="blog-single">
+                        <div class="media media-blog-4 m-b-10">
+                            <div class="media__img">
+                                <a class="img-radius" href="@Url.Action("index", "Single",new {id=16 })">
+                                    <img src="~/Public/images/@Model.blog.GaleryBlogs.First().ImageBlog" alt="">
+                                </a>
+                                <div class="media__date">
+                                    <div class="media__date-inner">
+                                        <span class="day">@Model.blog.Date.ToString("dd")</span>
+                                        <span class="month">@Model.blog.Date.ToString("MMMM")</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media__body">
+                                <h4 class="media__title title title--black title--s35">
+                                    <a href="@Url.Action("index", "Single")">@Model.blog.Title2</a>
+                                </h4>
+                                <div class="media__info">
+                                    <span class="author">
+                                        <a href="@Url.Action("index", "Single")">@Model.blog.adminka.Fullname</a>
+                                    </span>
+                                    <a class="cmt" href="#">@Model.blog.Comments.Count()</a>
+                                </div>
+
+                                <p class="media__text">@Model.blog.BlogDesc1</p>
+                            </div>
+                        </div>
+                        <div class="blockqoute-blog m-b-30">
+                            <blockquote class="blockqoute-blog__inner">
+                                @Model.blog.BlogDesc1
+                            </blockquote>
+                        </div>
+                        <div class="block-~/Public/images m-b-10">
+                            <div class="row row-special">
+                                <div class="col-60">
+                                    <div class="row row-special">
+                                        @foreach (var item in Model.galery2Image)
+                                        {
+                                            <div class="col-50">
+
+                                                <div class="block-~/Public/images-item">
+                                                    <img class="img-radius" src="~/Public/images/@item.ImageBlog" alt="Blog Single 1">
+                                                </div>
+                                            </div>
+                                        }
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="m-b-25">
+                            <h5 class="title title--sbold title--s18 m-b-10"></h5>
+                            @Model.blog.BlogDesc2
+                        </p>
+                        <div class="blog-single__info m-b-40">
+                            <ul class="list-tags list-unstyled">
+                                <li class="list-tags__icon">
+                                    <i class="fas fa-tags"></i>
+                                </li>
+                                <li class="list-tags__item text bol">
+                                    <a href="#">@Model.blog.blogCateg.Name</a>
+                                </li>
+
+                            </ul>
+                            <ul class="list-unstyled list-inline list-social list-social-3">
+                                <li class="list-inline-item">
+                                    <a class="ic-fb" href="https://www.facebook.com">
+                                        <i class="zmdi zmdi-facebook-box"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="ic-twi" href="https://twitter.com">
+                                        <i class="zmdi zmdi-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="ic-insta" href="https://www.instagram.com">
+                                        <i class="zmdi zmdi-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+
+                        <div class="blog-single__footer">
+                            <nav class="nav-blog">
+                                <ul class="list-nav-blog list-unstyled">
+                                    <li class="list-nav-blog__item prev">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="~/Public/images/@Model.blog.GaleryBlogs.FirstOrDefault().ImageBlog" alt="Nav blog 1">
+                                            </div>
+                                            <span class="list-nav-blog__text">Предыдущее сообщение</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-nav-blog__item next">
+                                        <a href="#">
+                                            <div class="image">
+                                                <img src="~/Public/images/nav-image-02.jpg" alt="Nav blog 2">
+                                            </div>
+                                            <span class="list-nav-blog__text">Следующее сообщение</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+
+                        @*<div class="media media-author-2 m-t-40 m-b-55">
+                                <div class="media__circle"></div>
+                                <div class="media__img">
+                                    <a class="img-circle-border-2" href="#">
+                                        <img src="~/Public/images/cmt-01.jpg" alt="Author 2">
+                                    </a>
+                                </div>
+                                <div class="media__body">
+                                    <h4 class="title title--sbold title--sm">Denise Murray</h4>
+                                    <span class="email"><a href="https://freebw.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ea8e8f8483998fb5d2d9aa8f928b879a868fc4898587">[email&#160;protected]</a></span>
+                                    <p class="m-t-15 m-b-20">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms</p>
+                                    <ul class="list-unstyled list-inline list-social list-social-3">
+                                        <li class="list-inline-item">
+                                            <a class="ic-fb" href="#">
+                                                <i class="zmdi zmdi-facebook-box"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="ic-twi" href="#">
+                                                <i class="zmdi zmdi-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="ic-insta" href="#">
+                                                <i class="zmdi zmdi-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="ic-in" href="#">
+                                                <i class="zmdi zmdi-linkedin"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>*@
+
+                        @*////////////comment///////////////////////////////*@
+
+                        <h3 class="title title--md">Комментарии</h3>
+
+
+                        <ul class="list-unstyled list-cmts" id="comments">
+                            @foreach (var item in Model.comajax)
+                            {
+                                @Html.Partial("_PartialPage1", item)
+
+                            }
+                        </ul>
+
+
+                        <h3 class="title title--md m-b-35">Написать комментарий</h3>
+                        <div class="au-input-group m-b-20">
+                            <textarea class="textarea-border-4" name="cmt" required placeholder="Ваш комментарий" id="commentDes"></textarea>
+                            <span id="errorMsg" style="color:red; display:none;">Boş olmaz.</span>
+                        </div>
+                        @*<button id="cmb" value="@Model.blog.ID" data-postId="@Model.blog.ID">add</button>*@
+                        <button class="au-btn au-btn--blue" value="@Model.blog.ID" data-postId="@Model.blog.ID" type="button" id="btnSubmit">
+                            Отправить
+                            <i class="zmdi zmdi-chevron-right"></i>
+                            <i class="zmdi zmdi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="page-sidebar p-sm-t-50">
+                        <div class="media media-author">
+                            <div class="media__img">
+                                <a class="img-circle-border" href="#">
+                                    <img src="~/Public/images/author-01.jpg" alt="Author">
+                                </a>
+                            </div>
+                            <div class="media__body">
+                                <h4 class="title title--black title--xs media__title">
+                                    <a href="#">Нилай Мамедова</a>
+                                </h4>
+                                <span class="media__desc">Автор</span>
+                                <div class="sign">
+                                    <img src="~/Public/images/icon/sign-02.png" alt="Sign">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget p-b-30 p-t-45">
+                            <div class="section-heading section-heading-1 section-heading-1--tiny2 text-left">
+                                <h2 class="section-heading__title">Категории</h2>
+                                <div class="section-heading__line">
+                                    <img src="~/Public/images/icon/line-blue-tiny.png" alt="Line">
+                                </div>
+                            </div>
+                            <ul class="list-bare list-unstyled">
+                                @foreach (var item in Model.blogCategs)
+                                {
+                                    <li class="list-bare__item">
+                                        <span class="dot"></span>
+                                        <a class="list-bare__link" href="@Url.Action("CategBlog","Blog",new {id=item.ID })">@item.Name</a>
+                                    </li>
+                                }
+
+
+                            </ul>
+                        </div>
+                        <div class="widget p-b-30">
+                            <div class="section-heading section-heading-1 section-heading-1--tiny2 text-left">
+                                <h2 class="section-heading__title">Последние новости</h2>
+                                <div class="section-heading__line">
+                                    <img src="~/Public/images/icon/line-blue-tiny.png" alt="Line">
+                                </div>
+                                <div class="m-b-20"></div>
+                            </div>
+                            @foreach (var item in Model.LastBlog)
+                            {
+                                <div class="media media-blog-5">
+                                    <div class="media__img">
+                                        <a class="img-radius" href="@Url.Action("Index","Single",new {id=item.ID })">
+                                            <img src="~/Public/images/@item.GaleryBlogs.FirstOrDefault().ImageBlog" alt="Excepteur occaecat" />
+                                        </a>
+                                    </div>
+                                    <div class="media__body">
+                                        <p class="media__time">@item.Date.ToString("MMMM dd,yyyy")</p>
+                                        <h5 class="title title--black media__title">
+                                            <a href="@Url.Action("Index","Single",new {id=item.ID })">@item.Name</a>
+                                        </h5>
+                                    </div>
+                                </div>
+
+                            }
+
+                        </div>
+
+                    </div>
+                    <div class="widget">
+                        <div class="widget-insta">
+                            <div class="widget-insta__title">#Instagram</div>
+                            <div class="row no-gutters">
+                                <div class="col-6">
+                                    <div class="widget-insta__item">
+                                        <a class="bg-overlay" href="#">
+                                            <i class="zmdi zmdi-instagram"></i>
+                                        </a>
+                                        <img src="~/Public/images/insta-01.jpg" alt="Insta 1">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget-insta__item">
+                                        <a class="bg-overlay" href="#">
+                                            <i class="zmdi zmdi-instagram"></i>
+                                        </a>
+                                        <img src="~/Public/images/insta-02.jpg" alt="Insta 2">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget-insta__item">
+                                        <a class="bg-overlay" href="#">
+                                            <i class="zmdi zmdi-instagram"></i>
+                                        </a>
+                                        <img src="~/Public/images/insta-03.jpg" alt="Insta 3">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget-insta__item">
+                                        <a class="bg-overlay" href="#">
+                                            <i class="zmdi zmdi-instagram"></i>
+                                        </a>
+                                        <img src="~/Public/images/insta-04.jpg" alt="Insta 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget p-t-50">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>*
+    </section>
+    <!-- END BLOG SINGLE  -->
+    <!-- CTA-->
+    <section class="section cta-1 bg-pink p-t-80 p-b-55">
+        <div class="container">
+            <div class="cta-wrap">
+                <div class="cta__img wow fadeInUp" data-wow-delay=".2s">
+                    <img src="~/Public/images/cta-item-01.png" alt="CTA">
+                </div>
+                <div class="row">
+                    <div class="col-md-7 offset-md-5">
+                        <div class="wrap--w625">
+                            <div class="cta">
+                                <div class="cta__body">
+                                    <h2 class="title cta__title">КАК ЗАПИСАТЬ СВОЕГО РЕБЕНКА В КЛАСС?</h2>
+                                    <p class="cta__text">Заинтересованы в хорошем дошкольном образовании своего ребенка? Наш детский сад - правильное решение!</p>
+                                    <a class="au-btn au-btn--blue" href="#">
+                                        Подробно
+                                        <i class="zmdi zmdi-chevron-right"></i>
+                                        <i class="zmdi zmdi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CTA-->
+</main>
+<!-- END MAIN-->
+@section Scripts{
+    <script src="~/Scripts/ajaxmain.js"></script>
+    
+    
+    
+    }

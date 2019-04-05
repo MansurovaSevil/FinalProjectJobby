@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jobby Theme Templates">
+    <meta name="author" content="AuCreative">
+    <meta name="keywords" content="Jobby Theme Templates">
+    <!-- Title Page-->
+    <title>Homepage</title>
+    <!-- Icons font CSS-->
+    <link href="~/Public/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/linearicons-free/css/linearicons-free.css" rel="stylesheet" media="all">
+    <!-- Base fonts of theme-->
+    <link href="~/Public/css/nunito-font.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/css/chelsea-market-font.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <!-- Bootstrap CSS-->
+    <link href="~/Public/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <!-- ~/Public/vendor CSS-->
+    <link href="~/Public/vendor/animate.css/animate.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/lightbox2/css/lightbox.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/modalVideo/modal-video.min.css" rel="stylesheet" media="all">
+    <link href="~/Public/vendor/revolution/css/layers.css" rel="stylesheet" />
+    <link href="~/Public/vendor/revolution/css/navigation.css" rel="stylesheet" />
+    <link href="~/Public/vendor/revolution/css/settings.css" rel="stylesheet" />
+    <!-- Main CSS-->
+    <link href="~/Public/css/main.min.css" rel="stylesheet" media="all">
+    <!--Favicons-->
+    <link rel="shortcut icon" href="favicon.html">
+    <link rel="apple-touch-icon" href="apple-icon.html">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.html">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.html">
+</head>
+<body class="animsition js-preloader">
+    <div class="page-wrapper">
+        <!-- HEADER-->
+        <header id="header">
+            <section class="top-contact">
+                <div class="container">
+                    <div class="top-contact-inner">
+                        <div class="top-contact__left">
+                            <div class="top-contact__item">
+                                <span class="lnr lnr-map"></span>г. Баку, Азербайджан.
+                            </div>
+                            <div class="top-contact__item">
+                                <span class="lnr lnr-phone-handset"></span>(050) 200 11 10
+                            </div>
+                        </div>
+                        <div class="top-contact__right">
+                            <ul class="list-unstyled list-inline list-social">
+                                <li class="list-inline-item">
+                                    <a class="ic-fb" href="https://www.facebook.com">
+                                        <i class="zmdi zmdi-facebook-box"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="ic-twi" href="https://twitter.com">
+                                        <i class="zmdi zmdi-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="ic-insta" href="https://www.instagram.com">
+                                        <i class="zmdi zmdi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item seprator">
+                                    <span></span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" data-toggle="modal" data-target="#modal-search">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="header header-1 d-none d-lg-block js-header-1">
+                <div class="header__bar">
+                    <div class="container">
+                        <div class="header__content">
+                            <div class="logo">
+                                <a href="@Url.Action("index","home")">
+                                    <img src="~/Public/images/icon/logo.png" alt="Jobby" />
+                                </a>
+                            </div>
+                            <nav class="header-navbar">
+                                <ul class="list-unstyled">
+                                    <li class="header-navbar__item has-sub">
+                                        <a href="@Url.Action("index","home")">
+                                            <span class="bg-link">Главная</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="header-navbar__item has-sub">
+                                        <a href="@Url.Action("index","aboutUs")">
+                                            <span class="bg-link">О нас</span>
+                                        </a>
+                                        <ul class="list-unstyled header-navbar-child first">
+
+                                            <li>
+                                                <a href="@Url.Action("index","programs")">Программа</a>
+                                            </li>
+                                            @*<li>
+                                                    <a href="@Url.Action("index","Error")">404 Error</a>
+                                                </li>*@
+                                            <li>
+                                                <a href="@Url.Action("index","contactUs")">Контакты</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="header-navbar__item has-sub">
+                                        <a href="@Url.Action("index","classes")">
+                                            <span class="bg-link">Классы</span>
+                                        </a>
+                                        <ul class="list-unstyled header-navbar-child first">
+
+
+                                            <li>
+                                                <a href="@Url.Action("index","classesSchedule")">Расписание</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="header-navbar__item has-sub">
+                                        <a href="@Url.Action("index","teacher")">
+                                            <span class="bg-link">Учителя</span>
+                                        </a>
+
+                                    </li>
+                                    <li class="header-navbar__item has-sub">
+                                        <a href="@Url.Action("index","blog")">
+                                            <span class="bg-link">Блогсфера</span>
+                                        </a>
+                                       
+                                    </li>
+
+                                    <li class="header-navbar__item has-sub">
+                                        <a href="@Url.Action("Login","User")">
+                                            <span class="bg-link">Логин</span>
+                                        </a>
+
+                                    </li>
+                                </ul>
+
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-search" role="dialog">
+                <button class="close" type="button" data-dismiss="modal">
+                    <i class="zmdi zmdi-close"></i>
+                </button>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <form class="form form--icon" method="POST">
+                                <input type="text" name="search" placeholder="Search here..." />
+                                <button class="btn-submit-1" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile js-header-mobile d-block d-lg-none">
+                <div class="header-mobile__bar">
+                    <div class="container-fluid clearfix">
+                        <a class="logo" href="index1.html">
+                            <img src="~/Public/images/icon/logo.png" alt="Jooby" />
+                        </a>
+                        <button class="hamburger hamburger--slider float-right" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <nav class="navbar-mobile">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a href="@Url.Action("index","home")">Главная</a>
+
+                        </li>
+                        <li class="has-sub">
+                            <a href="@Url.Action("index","aboutUs")">О нас</a>
+                            <ul class="list-unstyled navbar-mobile__child first">
+
+                                <li>
+                                    <a href="@Url.Action("index","programs")">Программа</a>
+                                </li>
+
+                                <li>
+                                    <a href="@Url.Action("index","404Error")">404 Error</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("index","contactUs")">Контакты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="@Url.Action("index","classes")">Классы</a>
+                            <ul class="list-unstyled navbar-mobile__child first">
+
+
+                                <li>
+                                    <a href="@Url.Action("index","classesSchedule")">Расписание</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="@Url.Action("index","teacher")">Учителя</a>
+
+                        </li>
+                        <li class="has-sub">
+                            <a href="@Url.Action("index","blog")">Блогсфера</a>
+                            <ul class="list-unstyled navbar-mobile__child first">
+
+                                <li>
+                                    <a href="@Url.Action("index","standart")">Стандарт</a>
+
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <!-- END HEADER-->
+
+
+
+        @RenderBody()
+
+
+
+        <!-- FOOTER-->
+        <footer class="footer">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="footer-wrap">
+                        <div class="footer__logo">
+                            <a href="@Url.Action("index","home")">
+                                <img src="~/Public/images/icon/logo.png" alt="Jobby" />
+                            </a>
+                        </div>
+                        <ul class="list-unstyled list-inline footer__list">
+                            <li class="list-inline-item">
+                                <a href="@Url.Action("index","aboutUs")">О нас</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="@Url.Action("index","contactUs")">Контакты</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="@Url.Action("index","classes")">Классы</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="@Url.Action("index","teacher")">Учителя</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="@Url.Action("index","blog")">Блогсфера</a>
+                            </li>
+                        </ul>
+                        <form class="form form--icon form__footer" method="post">
+                            <input type="email" name="email-footer" placeholder="" />
+                            <button class="btn-submit-1" type="submit">
+                                <img src="~/Public/images/icon/send.png" alt="send" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="section copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-wrap">
+                            <ul class="list-unstyled list-inline list-social list-social-2">
+                                <li class="list-inline-item">
+                                    <a class="ic-fb" href="https://www.facebook.com">
+                                        <i class="zmdi zmdi-facebook-box"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="ic-twi" href="https://twitter.com">
+                                        <i class="zmdi zmdi-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="ic-insta" href="https://www.instagram.com">
+                                        <i class="zmdi zmdi-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <span class="copyright__text">© 2019 JOBBY. </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END MAIN-->
+        <div class="modal fade modal-video" tabindex="-1" role="dialog" aria-hidden="true" id="modal-video">
+            <div class="modal-dialog modal-video__dialog" role="document" data-dismiss="modal">
+                <div class="modal-video__close" data-dismiss="modal" aria-label="Close">×</div>
+                <div class="modal-video__wrapper">
+                    <div class="modal-video__holder">
+                        <img src="~/Public/images/video-01.jpg" alt="IMG" />
+                    </div>
+                    <div class="modal-video__video">
+                        <iframe src="https://www.youtube.com/embed/qwzDYq8x1hs?ecver=1"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP-->
+    <div id="to-top">
+        <a href="#">
+            <img src="~/Public/images/icon/to-top.png" alt="To Top">
+        </a>
+    </div>
+    <!-- END BACK TO TOP-->
+    <!-- Jquery JS-->
+    <script src="~/Public/vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="~/Public/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- ~/Public/vendor JS-->
+    <script src="~/Public/vendor/animsition/animsition.min.js"></script>
+    <script src="~/Public/vendor/slick/slick.min.js"></script>
+    <script src="~/Public/vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="~/Public/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="~/Public/vendor/wow/wow.min.js"></script>
+    <script src="~/Public/vendor/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="~/Public/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Public/vendor/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Public/vendor/matchHeight/jquery.matchHeight-min.js"></script>
+    <script src="~/Public/vendor/select2/select2.min.js"></script>
+    <script src="~/Public/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="~/Public/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="~/Public/vendor/noUiSlider/nouislider.min.js"></script>
+    <script src="~/Public/vendor/modalVideo/modal-video.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
+    <script src="~/Public/js/theme-map.min.js"></script>
+    <script src="~/Public/js/config-contact.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!--
+    | (Load Extensions only on Local File Systems !
+    | The following part can be removed on Server for On Demand Loading)
+    -->
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="~/Public/vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <!-- Config Revolution Slider-->
+    <script type="text/javascript" src="~/Public/js/config-revolution.min.js"></script>
+    <!-- Main JS-->
+    <script src="~/Public/js/global.js"></script>
+
+    @RenderSection("Scripts", false)
+</body>
+
+
+</html>

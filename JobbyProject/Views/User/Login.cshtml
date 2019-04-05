@@ -1,0 +1,40 @@
+﻿@model JobbyProject.Models.User
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Войти</h3>
+                </div>
+                @if (Session["userLogged"] == null)
+                {
+                    <div class="panel-body">
+                        <form action="@Url.Action("Login","User")" method="post">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Емаил" name="Email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Пароль" name="Password" type="password">
+                                </div>
+
+                                <a class="dropdown-item" href="@Url.Action("Register", "User")">Зарегистрироваться</a>
+                                <button type="submit" class="btn btn-primary" value="Login" style="margin-left:2.5%">Вход</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

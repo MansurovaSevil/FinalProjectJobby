@@ -1,0 +1,27 @@
+﻿@model JobbyProject.Models.Comment
+
+
+<li class="list-cmts__item p-t-35 asl">
+
+    <div class="list-cmts__avatar">
+        <a class="img-circle" href="#">
+            <img src="~/Public/images/@Model.user.Image" alt="Cmt 2">
+        </a>
+    </div>
+    <div class="list-cmts__content">
+        <div class="list-cmts__content-head">
+            <div class="left">
+                <h5 class="title title--s18 title--black">
+                    <a href="#">@Model.user.Fullname</a>
+                </h5>
+                <span class="date">@Model.Date.ToString("MMMM dd yyyy")</span>
+            </div>
+
+        </div>
+        <div class="list-cmts__content-body">
+            <p>
+                @Model.Description
+            </p>
+        </div>
+    </div>
+</li>

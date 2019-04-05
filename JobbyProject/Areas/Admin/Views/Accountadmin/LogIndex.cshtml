@@ -1,0 +1,73 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>LoginPage</title>
+
+    <link rel="icon" href="~/Areas/Admin/assets/images/favicon.ico" type="image/x-icon">
+
+    <link href="~/Areas/Admin/assets/css/app.min.css" rel="stylesheet">
+
+    <link href="~/Areas/Admin/assets/css/style.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/assets/css/pages/extra_pages.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form action="@Url.Action("LogIndex","Accountadmin")" method="post" class="login100-form validate-form">
+                    <span class="login100-form-title p-b-45">
+                        Login
+                    </span>
+
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="Email">
+                        <span class="focus-input100"></span>
+                        <span class="label-input100">Email</span>
+                    </div>
+
+
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="Password">
+                        <span class="focus-input100"></span>
+                        <span class="label-input100">Password</span>
+                    </div>
+
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+
+                </form>
+
+                <div class="login100-more" style="background-image: url('../../../Admin/assets/images/pages/bg-01.png');">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/Areas/Admin/assets/js/app.min.js"></script>
+
+    <script src="~/Areas/Admin/assets/js/pages/examples/pages.js"></script>
+</body>
+
+
+
+</html>
+
+

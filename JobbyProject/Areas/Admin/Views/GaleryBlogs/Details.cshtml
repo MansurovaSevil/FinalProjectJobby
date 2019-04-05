@@ -1,0 +1,42 @@
+﻿@model JobbyProject.Models.GaleryBlog
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div>
+    <section class="content">
+        <div class="container-fluid">
+
+            <h4>GaleryBlog</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.blog.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.blog.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.ImageBlog)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.ImageBlog)
+                </dd>
+
+            </dl>
+   
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+        </div>
+        </section>
+    </div>
+

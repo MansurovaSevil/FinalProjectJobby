@@ -1,0 +1,83 @@
+﻿@model JobbyProject.ViewModel.ClassVM
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- MAIN-->
+<main id="main">
+
+    <!-- PAGE HEADING-->
+    <section class="section page-heading js-parallax-scroll" style="background-image: url('../../Public/images/bg-heading-02.jpg');">
+        <div class="container">
+            <div class="page-heading-inner">
+                <div class="section-heading section-heading-1 section-heading-1--tiny text-left">
+                    <h2 class="section-heading__title">Учитель</h2>
+                    <div class="section-heading__line">
+                        <img src="~/Public/images/icon/line-blue-small.png" alt="Line" />
+                    </div>
+                </div>
+                <nav class="au-breadcrumb">
+                    <ul class="list-unstyled list-breadcrumb">
+                        <li class="list-breadcrumb__item">
+                            <a href="@Url.Action("index","home")">Главная</a>
+                        </li>
+                        <li class="list-breadcrumb__item">Учитель</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- END PAGE HEADING-->
+    <!-- OUR TEACHER-->
+    <section class="section p-t-120 p-md-t-80 p-b-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading section-heading-1">
+                        <h2 class="section-heading__title">Наши учителя</h2>
+                        <div class="section-heading__line">
+                            <img src="~/Public/images/icon/line-blue.png" alt="Line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in Model.teachers)
+                {
+                    <div class="col-lg-6">
+                        <div class="media media-teacher-3">
+                            <div class="media__img">
+                                <a href="@Url.Action("index", "teacherSingle",new {id=item.ID })">
+                                    <img src="~/Public/images/@item.Image" alt="Teacher1" />
+                                </a>
+                            </div>
+                            <div class="media__body">
+                                <h4 class="media__title title title--sm title--black">
+                                    <a href="@Url.Action("index","teacherSingle",new {id=item.ID })">@item.Fullname</a>
+                                </h4>
+                                <span class="media__desc">@item.Special</span>
+                                <p class="media__text">@item.Tittle</p>
+                                <div class="media__tool">
+                                    <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                        <i class="zmdi zmdi-facebook-box"></i>
+                                    </a>
+                                    <a class="au-icon au-icon-2" href="https://twitter.com">
+                                        <i class="zmdi zmdi-twitter"></i>
+                                    </a>
+                                    <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                        <i class="zmdi zmdi-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                </div>
+        </div>
+    </section>
+    <!-- END OUR TEACHER-->
+   
+  
+</main>
+<!-- END MAIN-->

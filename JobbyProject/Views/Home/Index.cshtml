@@ -1,0 +1,612 @@
+﻿@model JobbyProject.ViewModel.ClassVM
+
+<!-- MAIN-->
+<main id="main">
+
+
+    <!-- SLIDER-->
+    <div class="rev_slider_wrapper">
+        <div class="rev_slider fullwidthabanner js-rev" data-version="5.4.4" style="display:none" data-rev-height="797" data-rev-layout="fullwidth" data-rev-stylearrow="au-rev-arrow-1" data-rev-bullets="false">
+            <ul>
+                <li class="rev-item rev-item-1" data-transition="fade">
+                    <img class="rev-slidebg" src="/Public/images/slide-01.jpg" alt="Master Slider 01" />
+                    <div class="tp-caption tp-resizeme rev-img-1" data-frames="[{&quot;delay&quot;:700,&quot;speed&quot;:900,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                         data-x="[left]" data-y="[bottom]" data-hoffset="[-320, -300, -200, -200, -100]" data-voffset="[-65, -65, -90, -80, -80]" data-width="['auto']" data-height="[&quot;auto&quot;]" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                        <img src="~/Public/images/slide-item-04.png" alt="Slide Img" />
+                    </div>
+                    <div class="tp-caption tp-resizeme rev-text-1" data-frames="[{&quot;delay&quot;:1000,&quot;speed&quot;:1800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;&quot;,&quot;mask&quot;:&quot;x:[100%];y:0;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                         data-x="[center,center,center,center,center]" data-y="[center]" data-hoffset="[165, 55, -10, 10, 10]" data-voffset="[-110, -110, -90, 0, 0]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="['auto']"
+                         data-height="[&quot;auto&quot;]" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]" data-color="#fff" data-fontweight="400" data-fontsize="[20, 20, 22, 24, 28]">#дошкольная информация</div>
+                    <div class="tp-caption tp-resizeme rev-text-2" data-frames="[{&quot;delay&quot;:900,&quot;split&quot;:&quot;chars&quot;,&quot;splitdelay&quot;:0.05,&quot;speed&quot;:1600,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                         data-x="[center,center,center,left,center]" data-y="[center]" data-hoffset="[365, 255, -10, -20, 10]" data-voffset="[-10, -20, 0, 0, -10]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[680,680,960,576,500]"
+                         data-height="[&quot;auto&quot;]" data-lineheight="[70, 60, 50, 50, 45]" data-whitespace="normal" data-color="#fff" data-fontweight="400" data-fontsize="[55, 42, 45, 42, 46]" data-textalign="[left, left, center, center, center]">Детское творчество из цветных рисунков</div>
+                    <a class="tp-caption tp-resizeme" href="#" target="_self" data-frames="[{&quot;delay&quot;:3200,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:-50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                       data-x="[center,center,center,center,center]" data-y="[center,center,center,center,center]" data-hoffset="[105, 5, -20, 10, 10]" data-voffset="[162, 120, 120, 120, 165]" data-width="['auto']" data-height="[&quot;auto&quot;]"
+                       data-responsive_offset="on" data-responsive="off" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                        <span class="rev-btn-1">
+                            Узнать больше
+                            <span class="arrow" data-paddingleft="10">
+                                <i class="zmdi zmdi-chevron-right"></i>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="rev-item rev-item-2" data-transition="scaledownfromright">
+                    <img class="rev-slidebg" src="~/Public/images/slide-02.jpg" alt="Master Slider 01" />
+                    <div class="tp-caption tp-resizeme rev-img-1" data-frames="[{&quot;delay&quot;:1100,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                         data-x="[left]" data-y="[bottom]" data-hoffset="[-280, -280, -200, -200, -100]" data-voffset="[-10, -10, -90, -80, -80]" data-width="['auto']" data-height="[&quot;auto&quot;]" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                        <img src="~/Public/images/slide-item-01.png" alt="Slide Img" />
+                    </div>
+                    <div class="tp-caption tp-resizeme rev-text-3" data-frames="[{&quot;delay&quot;:500,&quot;split&quot;:&quot;chars&quot;,&quot;splitdelay&quot;:0.05,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                         data-x="[right, right, center, center, center]" data-y="[center]" data-hoffset="[-80, -80, 10, 0, 0]" data-voffset="[10, 10, -30, 0, -90]" data-paddingleft="[0, 0, 0, 0, 15]" data-paddingright="[0, 0, 0, 0, 15]" data-width="[650 , 650, 850 , 450, 570]"
+                         data-height="[&quot;auto&quot;]" data-fontsize="[70, 70, 54, 54, 44]" data-lineheight="[85, 85, 64, 62, 50]" data-whitespace="normal" data-textalign="center" data-color="#333" data-fontweight="400">Присоединяйтесь к красочному фестивалю</div>
+                    <a class="tp-caption tp-resizeme" href="#" target="_self" data-frames="[{&quot;delay&quot;:2300,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power4.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;auto:auto;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]"
+                       data-x="[right,right,center,center,center]" data-y="[bottom]" data-hoffset="[110, 110, -10, 10, 10]" data-voffset="[152, 152, 250, 200, 230]" data-width="['auto']" data-height="[&quot;auto&quot;]" data-responsive_offset="on"
+                       data-responsive="off" data-whitespace="[nowrap, nowrap, nowrap, nowrap, nowrap]">
+                        <span class="rev-btn-1">
+                            Узнать больше
+                            <span class="arrow" data-paddingleft="10">
+                                <i class="zmdi zmdi-chevron-right"></i>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END SLIDER-->
+    <!-- WELCOME-->
+    <section class="section p-t-145 p-b-45 p-md-t-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading section-heading-1">
+                        <h2 class="section-heading__title">Добро пожаловать в JOBBY</h2>
+                        <div class="section-heading__line">
+                            <img src="~/Public/images/icon/line-blue.png" alt="Line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                    <div class="box box-welcome">
+                        <div class="box__head">
+                            <img src="~/Public/images/welcome-01.jpg" alt="Welcome 1">
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title">
+                                <a href="#">здоровое питание</a>
+                            </h3>
+                            <p class="box__text">Здоровое питание обеспечивает рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению здоровья и профилактике заболеваний</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                    <div class="box box-welcome">
+                        <div class="box__head">
+                            <img src="~/Public/images/welcome-02.jpg" alt="Welcome 2">
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title">
+                                <a href="#">Сад для ребенка</a>
+                            </h3>
+                            <p class="box__text">В саду проходит первая адаптация малыша к новым условиям, познает много нового и интересного, учится строить первые отношения со сверстниками, происходит самоутверждение</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                    <div class="box box-welcome">
+                        <div class="box__head">
+                            <img src="~/Public/images/welcome-03.jpg" alt="Welcome 3">
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title">
+                                <a href="#">Музыка и пение</a>
+                            </h3>
+                            <p class="box__text">Голос – самый доступный человеку музыкальный инструмент, именно во время пения дети впервые прикасаются к музыке.Это волшебный мир со множеством путешествий, в котором можно фантазировать, выдумывать и творить.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.8s">
+                    <div class="box box-welcome">
+                        <div class="box__head">
+                            <img src="~/Public/images/welcome-04.jpg" alt="Welcome 4">
+                        </div>
+                        <div class="box__body">
+                            <h3 class="box__title">
+                                <a href="#">Игра и учеба</a>
+                            </h3>
+                            <p class="box__text">Для ребят дошкольного возраста игры имеют исключительное значение: игра для них - учеба, игра для них - труд, игра для них - серьезная форма воспитания. Игра для дошкольников - способ познания окружающего</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END WELCOME-->
+    <!-- OUR ROOMS-->
+
+    <section class="section bg-blue p-t-120 p-b-165">
+        <div class="bg-cloud"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading section-heading-2">
+                        <h2 class="section-heading__title">наши комнаты & классы</h2>
+                        <div class="section-heading__line">
+                            <img src="~/Public/images/icon/line-white.png" alt="Line 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                @foreach (var item in Model.classes)
+                {
+                    <div class="col-lg-6">
+                        <div class="p-r-25 p-md-r-0">
+                            <div class="media media-our-class">
+                                <div class="media__body">
+                                    <h3 class="media__title">
+                                        <a href="@Url.Action("index","classes",new {id=item.ID })">@item.Name</a>
+                                    </h3>
+                                    <span class="date-time">@item.OpenHours.ToString("hh:mm") - @item.CloseHours.ToString("HH:mm") </span>
+                                    <span class="date-time">@item.StartDate.ToString("dd MMMM yyyy")</span>
+                                    <div class="media-our-class__info">
+                                        <div class="row no-gutters">
+                                            <div class="col-6">
+                                                <div class="item has-seprator">
+                                                    <span class="name">Возраст</span>
+                                                    <span class="value">@item.age.MinAge - @item.age.MaxAge лет</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item">
+                                                    <span class="name">Мест</span>
+                                                    <span class="value">@item.SizeSeat детей</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media__img">
+                                    <a href="@Url.Action("index","classes")">
+                                        <img src="~/Public/images//@item.Image" alt="Our room 1">
+                                    </a>
+                                    <span class="media-our-class__price">
+                                        <span class="inner">@item.Price АЗН</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+              
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="learn-more text-center m-t-60">
+                                <a class="au-btn au-btn--pink" href="@Url.Action("index","classes")">
+                                    Узнать больше
+                                    <i class="zmdi zmdi-chevron-right"></i>
+                                    <i class="zmdi zmdi-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+    </section>
+    <!-- END OUR ROOMS-->
+    <!-- ACTIVITIES-->
+    <section class="section p-t-125 p-b-105">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading section-heading-1">
+                        <h2 class="section-heading__title">Мероприятия на неделе</h2>
+                        <div class="section-heading__line">
+                            <img src="~/Public/images/icon/line-blue.png" alt="Line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-9">
+                    <div class="p-r-55 p-md-r-0">
+                        <div class="media__video-wrap">
+                            <img src="~/Public/images/video-01.jpg" alt="Video 1">
+                            <div class="media__video-icon js-modal-video wow fadeIn" data-toggle="modal" data-target="#modal-video" data-wow-delay=".2s">
+                                <i class="zmdi zmdi-play-circle video__icon"></i>
+                            </div>
+                        </div>
+                        <div class="slick-class m-t-25">
+                            <div class="slick__wrap-content js-slick-wrapper" data-slick-xs="1" data-slick-sm="1" data-slick-md="2" data-slick-lg="2" data-slick-xl="2" data-slick-customnav="true" data-slick-autoplay="true">
+                                <div class="slick__content js-slick-content">
+                                    <div class="slick__item">
+                                        <div class="media media-our-class-2">
+                                            <div class="media__img">
+                                                <a href="#">
+                                                    <img src="~/Public/images/our-class-05.jpg" alt="Our Class">
+                                                </a>
+                                            </div>
+                                            <div class="media__body">
+                                                <h4 class="media__title">
+                                                    <a href="#">Учебная геометрия</a>
+                                                </h4>
+                                                <span class="date-time">09:00 - 11:00 </span>
+                                                <span class="date-time">28 апреля 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="media media-our-class-2">
+                                            <div class="media__img">
+                                                <a href="#">
+                                                    <img src="~/Public/images/our-class-06.jpg" alt="Our Class">
+                                                </a>
+                                            </div>
+                                            <div class="media__body">
+                                                <h4 class="media__title">
+                                                    <a href="#">Летняя вечеринка</a>
+                                                </h4>
+                                                <span class="date-time">18:00 - 23:00</span>
+                                                <span class="date-time">23 июня 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="media media-our-class-2">
+                                            <div class="media__img">
+                                                <a href="#">
+                                                    <img src="~/Public/images/our-class-05.jpg" alt="Our Class">
+                                                </a>
+                                            </div>
+                                            <div class="media__body">
+                                                <h4 class="media__title">
+                                                    <a href="#">Игра</a>
+                                                </h4>
+                                                <span class="date-time">10:00 - 12:00 </span>
+                                                <span class="date-time">3 мая 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slick__item">
+                                        <div class="media media-our-class-2">
+                                            <div class="media__img">
+                                                <a href="#">
+                                                    <img src="~/Public/images/our-class-06.jpg" alt="Our Class">
+                                                </a>
+                                            </div>
+                                            <div class="media__body">
+                                                <h4 class="media__title">
+                                                    <a href="#">Музыкальная вечеринка</a>
+                                                </h4>
+                                                <span class="date-time">17:00 - 22:00 </span>
+                                                <span class="date-time">29 июня 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slick__nav arrows-1">
+                                    <i class="slick-prev slick-arrow js-slick-prev lnr lnr-chevron-left"></i>
+                                    <i class="slick-next slick-arrow js-slick-next lnr lnr-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cta-form m-md-t-40">
+                        <div class="cta-form__top-bg"></div>
+                        <div class="cta-form-inner">
+                            <h4 class="cta-form__title m-b-35">КАК ЗАПИСАТЬ РЕБЕНКА В ГРУППУ?</h4>
+                            <form class="form form--icon" method="post">
+                                <input type="email" name="email" placeholder="Эмеил...">
+                                <button class="btn-submit-1" type="submit">
+                                    <img src="~/Public/images/icon/send.png" alt="send">
+                                </button>
+                            </form>
+                        </div>
+                        <div class="cta-form__bot-bg">
+                            <img src="~/Public/images/icon/dancing.png" alt="Dancing">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ACTIVITIES-->
+    <!-- GRADUATION-->
+    <section class="section">
+        <div class="container-fluid">
+            <div class="row no-gutters row--no-padding">
+                <div class="col-lg-6">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="media media-gradu">
+                                <div class="media__overlay">
+                                    <div class="media__overlay-inner"></div>
+                                </div>
+                                <div class="media__img">
+                                    <img src="~/Public/images/gradu-06.jpg" alt="Gradu 1">
+                                </div>
+                                <div class="media__body">
+                                    <div class="media__tool">
+                                        <a class="au-icon" href="~/Public/images/gradu-06.jpg" data-lightbox="gradu">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                        </a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="media media-gradu">
+                                <div class="media__overlay">
+                                    <div class="media__overlay-inner"></div>
+                                </div>
+                                <div class="media__img">
+                                    <img src="~/Public/images/gradu-01.jpg" alt="Gradu 2">
+                                </div>
+                                <div class="media__body">
+                                    <div class="media__tool">
+                                        <a class="au-icon" href="~/Public/images/gradu-01.jpg" data-lightbox="gradu">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                        </a>
+                                   
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="media media-gradu">
+                        <div class="media__overlay">
+                            <div class="media__overlay-inner"></div>
+                        </div>
+                        <div class="media__img">
+                            <img src="~/Public/images/gradu-02.jpg" alt="Gradu 3">
+                        </div>
+                        <div class="media__body">
+                            <div class="media__tool">
+                                <a class="au-icon" href="~/Public/images/gradu-02.jpg" data-lightbox="gradu">
+                                    <i class="fas fa-expand-arrows-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="media media-gradu">
+                        <div class="media__overlay">
+                            <div class="media__overlay-inner"></div>
+                        </div>
+                        <div class="media__img">
+                            <img src="~/Public/images/gradu-03.jpg" alt="Gradu 4">
+                        </div>
+                        <div class="media__body">
+                            <div class="media__tool">
+                                <a class="au-icon" href="~/Public/images/gradu-03.jpg" data-lightbox="gradu">
+                                    <i class="fas fa-expand-arrows-alt"></i>
+                                </a>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="media media-gradu">
+                                <div class="media__overlay">
+                                    <div class="media__overlay-inner"></div>
+                                </div>
+                                <div class="media__img">
+                                    <img src="~/Public/images/gradu-04.jpg" alt="Gradu 5">
+                                </div>
+                                <div class="media__body">
+                                    <div class="media__tool">
+                                        <a class="au-icon" href="~/Public/images/gradu-04.jpg" data-lightbox="gradu">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                        </a>
+                                       
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="media media-gradu">
+                                <div class="media__overlay">
+                                    <div class="media__overlay-inner"></div>
+                                </div>
+                                <div class="media__img">
+                                    <img src="~/Public/images/gradu-05.jpg" alt="Gradu 6">
+                                </div>
+                                <div class="media__body">
+                                    <div class="media__tool">
+                                        <a class="au-icon" href="~/Public/images/gradu-05.jpg" data-lightbox="gradu">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                        </a>
+                                       
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END GRADUATION-->
+
+    <!-- TEACHER-->
+    <section class="section p-t-125 p-b-85 p-md-t-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading section-heading-1">
+                        <h2 class="section-heading__title">Наши учителя</h2>
+                        <div class="section-heading__line">
+                            <img src="~/Public/images/icon/line-blue.png" alt="Line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                    <div class="col-lg-6">
+                        <div class="media media-teacher">
+                            <div class="media__img">
+                                <a href="@Url.Action("index","teacherSingle", new { id=Model.teacherFirst.ID})">
+                                    <img src="~/Public/images/@Model.teacherFirst.Image" alt="Teacher 1">
+                                </a>
+                                <div class="media__tool">
+                                    <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                        <i class="zmdi zmdi-facebook-box"></i>
+                                    </a>
+                                    <a class="au-icon au-icon-2" href="https://twitter.com">
+                                        <i class="zmdi zmdi-twitter"></i>
+                                    </a>
+                                    <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                        <i class="zmdi zmdi-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media__body">
+                                <h4 class="media__title title">
+                                    <a href="@Url.Action("index","teacherSingle",new {id=Model.teacherFirst.ID })">@Model.teacherFirst.Fullname</a>
+                                </h4>
+                                <span class="media__desc">@Model.teacherFirst.Special</span>
+                            </div>
+                        </div>
+                        <hr class="hr-2">
+                      
+                    </div>
+                
+
+           
+
+                    <div class="col-lg-6">
+                        <div class="row">
+                            @foreach (var item in Model.teachers)
+                            {
+                                <div class="col-md-6">
+                                    <div class="media media-teacher m-b-20 m-md-b-30">
+                                        <div class="media__img">
+                                            <a href="@Url.Action("index","teacherSingle",new {id=item.ID })">
+                                                <img src="~/Public/images/@item.Image" alt="Teacher 2">
+                                            </a>
+                                            <div class="media__tool">
+                                                <a class="au-icon au-icon-2" href="https://www.facebook.com">
+                                                    <i class="zmdi zmdi-facebook-box"></i>
+                                                </a>
+                                                <a class="au-icon au-icon-2" href="https://twitter.com">
+                                                    <i class="zmdi zmdi-twitter"></i>
+                                                </a>
+                                                <a class="au-icon au-icon-2" href="https://www.instagram.com">
+                                                    <i class="zmdi zmdi-instagram"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="media__body">
+                                            <h4 class="media__title title">
+                                                <a href="@Url.Action("index","teacherSingle",new {id=item.ID })">@item.Fullname</a>
+                                            </h4>
+                                            <span class="media__desc">@item.Special</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- END TEACHER-->
+    <!-- BLOG-->
+    <section class="section bg-f7 p-t-125 p-b-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-intro m-md-b-40">
+                        <div class="section-heading section-heading-1 text-left">
+                            <h2 class="section-heading__title">Наша Блогсфера</h2>
+                            <div class="section-heading__line">
+                                <img src="~/Public/images/icon/line-blue.png" alt="Line">
+                            </div>
+                        </div>
+                        <p class="blog-intro__text">
+                            Мы очень рады, что Вы посетили нас.<br />
+                            Удачи и успехов нашим выпускникам, а также улыбок и радости нашим воспитанникам!!!
+                        </p>
+                        <a class="au-btn au-btn--blue" href="@Url.Action("index","Single")">
+                            Узнать больше
+                            <i class="zmdi zmdi-chevron-right"></i>
+                            <i class="zmdi zmdi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+               
+                <div class="col-lg-8">
+                    
+                        <div class="slick-blog">
+                            <div class="slick__wrap-content js-slick-wrapper" data-slick-xs="1" data-slick-sm="1" data-slick-md="2" data-slick-lg="2" data-slick-xl="2" data-slick-dots="true" data-slick-customnav="true" data-slick-autoplay="true">
+                                <div class="slick__content js-slick-content">
+                                    @foreach (var item in Model.blogs)
+                                    {
+                                        <div class="slick__item">
+                                            <div class="media media-blog">
+                                                <div class="media__img">
+                                                    <a href="@Url.Action("index", "Single", new {id=item.ID })">
+                                                        <img src="~/Public/images/@item.GaleryBlogs.First().ImageBlog" alt="How to coax children" />
+                                                    </a>
+                                                    <div class="media__date">
+                                                        <div class="media__date-inner">
+                                                            <span class="day">@item.Date.ToString("dd")</span>
+                                                            <span class="month">@item.Date.ToString("MMMM")</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media__body">
+                                                    <h4 class="media__title title title--black title--md">
+                                                        <a href="@Url.Action("index", "Single", new {id=item.ID })">@item.Name</a>
+                                                    </h4>
+                                                    <div class="media__info">
+                                                        <span class="author">
+                                                            <a href="@Url.Action("index", "Single")">@item.adminka.Fullname</a>
+                                                        </span>
+                                                        <a class="cmt" href="#">@item.Comments.Count()</a>
+                                                    </div>
+                                                    <p class="media__text">@item.Title2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
+                                <div class="slick__dots dots-style1"></div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- END BLOG-->
+</main>
+<!-- END MAIN-->
